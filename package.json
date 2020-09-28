@@ -1,14 +1,25 @@
 {
   "name": "1.1-frase",
   "version": "1.0.0",
-  "description": "",
+  "description": "Repositorio del ejercicio 1.2 del bloque 1 del mòdulo DWEC de 2nDAW",
   "main": "index.js",
   "directories": {
     "test": "test"
   },
   "scripts": {
-    "test": "jest"
+    "tests": "jest"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ande23/dwec-1js-1.2.frase.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Ande23/dwec-1js-1.2.frase/issues"
+  },
+  "homepage": "https://github.com/Ande23/dwec-1js-1.2.frase#readme",
+  "devDependencies": {
+    "jest": "^26.4.2"
+  }
 }
