@@ -26,17 +26,17 @@ Las funciones que contendrá el fichero _functions.js_ (deben llamarse **EXACTAM
 -	palabrasReves: devuelve la cadena pasada como parámetro con sus palabras al revés
 -	palindromo: devuelve true si la cadena pasada como parámetro es un palíndromo y false si no lo es. Para ello no se tendrán en cuenta espacios en blanco ni la capitalización de las letras
 
-Por ejemplo, si el usuario introduce la frase 
+Por ejemplo, si el usuario introduce la frase
 > La ruta nos aporto otro paso natural
 
 el programa de _index.js_ mostraría en la consola lo siguiente:
 ```
 Frase: "La ruta nos aporto otro paso natural"
 36 letras y 7 palabras
-LA RUTA NOS APORTO OTRO PASO NATURAL 
-La Ruta Nos Aporto Otro Paso Natural 
-larutan osap orto otropa son atur aL 
-natural paso otro aporto nos ruta La 
+LA RUTA NOS APORTO OTRO PASO NATURAL
+La Ruta Nos Aporto Otro Paso Natural
+larutan osap orto otropa son atur aL
+natural paso otro aporto nos ruta La
 Sí es un palíndromo
 ```
 

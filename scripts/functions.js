@@ -15,7 +15,7 @@ function comprobacio(frase){
          return true;
       }
    }
-
+   return true;
 }
 
 function letras(frase){
@@ -73,6 +73,9 @@ function palabrasReves(frase){
     fraseInvertida = fraseInvertida + " " + fraseArray[x];
     x--;
   }
+  fraseInvertida = fraseInvertida.replace (variosEspacios," ");
+  fraseInvertida = fraseInvertida.replace (primerEspacio,"");
+  fraseInvertida = fraseInvertida.replace (ultimoEspacio,"");
   return fraseInvertida;
 }
 
