@@ -1,40 +1,24 @@
 'use strict'
 
-'use strict'
+function letras(cadena) { return cadena.length; }
 
-function letras() {
+function palabras(cadena){ return cadena.split(' ').length; }
 
-    return num_letras;
-}
+function maysc(cadena) { return cadena.toUpperCase(); }
 
-function palabras(){
+function titulo(cadena) { return cadena.charAt(0).toUpperCase; }
 
-
-    return num_palabras;
-}
-
-function maysc() {
-
-    return mayusculas;
-}
-
-function titulo() {
-
-    return tituloA;
-}
-
-function letrasReves() {
+function letrasReves(cadena) {
 
     return letra_alreves;
 }
 
-function palabrasReves() {
+function palabrasReves(cadena) {
 
     return palabra_alreves;
 }
 
-function palindromo() {
+function palindromo(cadena) {
 
     return true;
 }
-
