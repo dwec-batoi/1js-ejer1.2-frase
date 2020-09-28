@@ -6,6 +6,15 @@ function palabras(cadena){ return cadena.split(' ').length; }
 
 function maysc(cadena) { return cadena.toUpperCase(); }
 
+/*
+
+ ^\w: toma el primer caracter de la cadena.
+ |: condicional OR.
+ \s\w: toma el primer caracter después de un espacio en blanco.
+ (): captura el patrón.
+ g: empareja las ocurrencias.
+
+*/
 function titulo(cadena) { return cadena.replace(/(^\w|\s\w)/g, m => m.toUpperCase()); }
 
 function letrasReves(cadena) { 
