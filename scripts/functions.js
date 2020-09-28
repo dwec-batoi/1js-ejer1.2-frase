@@ -15,7 +15,7 @@ function maysc(cadena) { return cadena.toUpperCase(); }
  g: empareja las ocurrencias.
 
 */
-function titulo(cadena) { return cadena.replace(/(^\w|\s\w)/g, m => m.toUpperCase()); }
+function titulo(cadena) { return cadena.replace(/(^\w|\s\w)/g, m => m.toUpperCase()); } 
 
 function letrasReves(cadena) { 
     
@@ -42,4 +42,14 @@ function palindromo(cadena) {
 
         return 'No es un palíndromo';
     }    
+}
+
+module.exports = {
+    letras,
+    palabras,
+    maysc,
+    titulo,
+    letrasReves,
+    palabrasReves,
+    palindromo
 }
