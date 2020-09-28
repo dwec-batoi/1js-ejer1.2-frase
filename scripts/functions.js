@@ -6,19 +6,24 @@ function palabras(cadena){ return cadena.split(' ').length; }
 
 function maysc(cadena) { return cadena.toUpperCase(); }
 
-function titulo(cadena) { return cadena.charAt(0).toUpperCase; }
+function titulo(cadena) { return cadena.charAt(0).toUpperCase(); }
 
-function letrasReves(cadena) {
+function letrasReves(cadena) { 
+    
+    var cadenaInvertida = '';   var p = cadena.length;
 
-    return letra_alreves;
+    while (p >= 0) {
+
+        cadenaInvertida = cadenaInvertida + cadena.charAt(p);
+        p--;
+    }
+
+    return  cadenaInvertida;
 }
 
-function palabrasReves(cadena) {
-
-    return palabra_alreves;
-}
+function palabrasReves(cadena) { return cadena.reverse(); }
 
 function palindromo(cadena) {
 
-    return true;
+    return 'Sí es un palíndromo';
 }
