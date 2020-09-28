@@ -6,7 +6,7 @@ function palabras(cadena){ return cadena.split(' ').length; }
 
 function maysc(cadena) { return cadena.toUpperCase(); }
 
-function titulo(cadena) { return cadena.charAt(0).toUpperCase(); }
+function titulo(cadena) { return cadena.replace(/(^\w|\s\w)/g, m => m.toUpperCase()); }
 
 function letrasReves(cadena) { 
     
@@ -21,9 +21,16 @@ function letrasReves(cadena) {
     return  cadenaInvertida;
 }
 
-function palabrasReves(cadena) { return cadena.reverse(); }
+function palabrasReves(cadena) { return cadena.split(" ").reverse().join(" "); }
 
 function palindromo(cadena) {
 
-    return 'Sí es un palíndromo';
+    if ( cadena.split(" ").join("").toLowerCase() == letrasReves(cadena).split(" ").join("").toLowerCase()) {
+
+        return 'Sí es un palíndromo';
+
+    } else {
+
+        return 'No es un palíndromo';
+    }    
 }
