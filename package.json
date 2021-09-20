@@ -1,7 +1,7 @@
 {
-  "name": "1.1-frase",
+  "name": "jest",
   "version": "1.0.0",
-  "description": "",
+  "description": "Repositorio del ejercicio 1.2 del bloque 1 del mòdulo DWEC de 2nDAW",
   "main": "index.js",
   "directories": {
     "test": "test"
@@ -9,6 +9,14 @@
   "scripts": {
     "test": "jest"
   },
-  "author": "",
-  "license": "ISC"
+  "author": "jest",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EricksonSterling/dwec-1js-1.2.frase.git"
+  },
+  "bugs": {
+    "url": "https://github.com/EricksonSterling/dwec-1js-1.2.frase/issues"
+  },
+  "homepage": "https://github.com/EricksonSterling/dwec-1js-1.2.frase#readme"
 }

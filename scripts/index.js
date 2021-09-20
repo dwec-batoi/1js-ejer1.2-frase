@@ -1,18 +1,19 @@
-'use strict'
+'use strict';
 
-var frase = window.prompt('Introduce una frase: ');
+const { palabras, maysc, titulo, letrasReves, palabrasReves, palindromo } = require("./functions");
 
-if ( frase === '' ){
+let frase = prompt('Introduce una frase: ');
 
-    console.error( 'Introduce una frase.' );
+console.log('Frase: ' + frase);
 
-} else {
+console.log(letras(frase) + ' letras y ' + palabras(frase) + ' palabras');
 
-    console.log( letras(frase) + ' letras y ' + palabras(frase) + ' palabras.' );
-    console.log( maysc(frase) );
-    console.log( titulo(frase) );
-    console.log( letrasReves(frase) );
-    console.log(palabrasReves(frase));
-    console.log( palindromo(frase) );
+console.log(maysc(frase));
 
-}
+console.log(titulo(frase));
+
+console.log(letrasReves(frase));
+
+console.log(palabrasReves);
+
+console.log(palindromo(frase));

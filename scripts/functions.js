@@ -1,48 +1,65 @@
-'use strict'
+'use strict';
 
-function letras(cadena) { return cadena.length; }
+let frase = 'Esto es una frase.';
 
-function palabras(cadena){ return cadena.split(' ').length; }
+function letras(frase) {
+    //devuelve el número de letras de la cadena pasada como parámetro (sólo un número).
 
-function maysc(cadena) { return cadena.toUpperCase(); }
+    //El caracter /s representa los espacios en blanco.
+    //El caracter /g indica que haga el reemplazo multiples veces.
 
-/*
+   return frase.replace(/\s/g, '').length;
+}
 
- ^\w: toma el primer caracter de la cadena.
- |: condicional OR.
- \s\w: toma el primer caracter después de un espacio en blanco.
- (): captura el patrón.
- g: empareja las ocurrencias.
+function palabras(frase) {
+    //devuelve el número de palabras de la cadena pasada como parámetro (sólo un número).
 
-*/
-function titulo(cadena) { return cadena.replace(/(^\w|\s\w)/g, m => m.toUpperCase()); } 
+    return frase.length;
+}
 
-function letrasReves(cadena) { 
-    
-    var cadenaInvertida = '';   var p = cadena.length;
+function maysc(frase) {
+    //devuelve la cadena pasada como parámetro convertida a mayúsculas.
 
-    while (p >= 0) {
+    return frase.toLocaleUppercase();
+}
 
-        cadenaInvertida = cadenaInvertida + cadena.charAt(p);
-        p--;
+function titulo(frase){
+    //devuelve la cadena pasada como parámetro con la primera letra de cada pañabra convertida a mayúsculas
+
+}
+
+function letrasReves(frase){
+    //devuelve la cadena pasada como parámetro al revés.
+
+    let fraseInvertida = "";
+    let a = frase.length;
+
+    while(a>=0){
+
+        fraseInvertida += frase.charAt(a);
+        a--;
     }
-
-    return  cadenaInvertida;
+    return fraseInvertida;
 }
 
-function palabrasReves(cadena) { return cadena.split(" ").reverse().join(" "); }
+function palabrasReves(frase){
+    //Devuelve true si la cadena pasada como parámetro es un palíndromo y false si no lo es. Para ello no se tendrán en cuenta espacios en blanco ni la capitalización de las letras.
 
-function palindromo(cadena) {
-
-    if ( cadena.split(" ").join("").toLowerCase() == letrasReves(cadena).split(" ").join("").toLowerCase()) {
-
-        return 'Sí es un palíndromo';
-
-    } else {
-
-        return 'No es un palíndromo';
-    }    
+    return frase.split(' ').reverse().join(' ');
 }
+
+function palindromo(frase){
+    //devuelve true si la cadena pasada como parámetro es un palíndromo y false si no lo es. Para ello no se tendrán en cuenta espacios en blanco ni la capitalización de las letras
+
+    let fraseNormal = frase.split(' ').join('');
+    let fraseInvertida = letrasReves(frase.split(' ').join(''));
+
+    let result = fraseNormal == fraseInvertida ? "Sí es un palíndromo" : "No es un palíndromo";
+
+    return result;
+}
+
+
 
 module.exports = {
     letras,
