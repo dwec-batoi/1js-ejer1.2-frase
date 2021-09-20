@@ -20,7 +20,6 @@ function titulo (string){ // return string
         letraMayuscula = palabras[i].charAt(0).toLocaleUpperCase();
         palabras[i] = palabras[i].replace(palabras[i].charAt(0),letraMayuscula);
     }
-    //return arrayToString(palabras," ");
     return palabras.join(" ");
 }
 
