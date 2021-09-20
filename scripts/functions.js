@@ -20,7 +20,8 @@ function titulo (string){ // return string
         letraMayuscula = palabras[i].charAt(0).toLocaleUpperCase();
         palabras[i] = palabras[i].replace(palabras[i].charAt(0),letraMayuscula);
     }
-    return arrayToString(palabras," ");
+    //return arrayToString(palabras," ");
+    return palabras.join(" ");
 }
 
 function letrasReves(string){ // return string
@@ -54,17 +55,6 @@ function palindromo(string){ // return boolean
 }
 
 // funciones secundarias
-function arrayToString(array, separador){ // return string
-    let string = "";
-    for (let key in array) {
-        string += array[key];
-        if (parseInt(key) < array.length -1){
-            string += separador;
-        }
-    }
-    return string;
-}
-
 function removeCharacter(string, character){ // return string
     let array = string.split(character);
     let nuevaCadena = "";

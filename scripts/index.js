@@ -1,7 +1,7 @@
 'use strict'
 
 let frase = "La ruta nos aporto otro paso natural";
-console.log(letras(frase) + " letras y " + array(frase) + " palabras");
+console.log(letras(frase) + " letras y " + palabras(frase) + " palabras");
 console.log(maysc(frase));
 console.log(titulo(frase));
 console.log(letrasReves(frase));
