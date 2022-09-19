@@ -27,6 +27,6 @@ describe('Funciones sobre la frase "Una frase para probar"', () => {
       expect(funciones.palindromo(frase)).toBe(false);
     });
     test('Un palíndromo devuelve TRUE', () => {
-      expect(funciones.palindromo(frase2)).toBe(true);
+      expect(funciones.palindromo(frase2)).toBeTruthy();
     });
 });
