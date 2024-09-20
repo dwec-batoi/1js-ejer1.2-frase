@@ -5,11 +5,6 @@ Repositorio del ejercicio 1.2 del bloque 1 del mòdulo DWEC de 2nDAW
 ## Preparar el entorno
 Para realizar esta práctica clona el repositorio <https://github.com/dwec-batoi/1js-ejer1.2-frase.git>
 
-Cuando quieras pasar los test escribe en la terminal:
-```bash
-npm run tests
-```
-
 ## Práctica 1.2 - Frase
 Vamos a pedir al usuario que introduzca una frase y a continuación mostraremos en la consola:
 - el número de letras y de palabras que tiene
@@ -73,3 +68,9 @@ module.exports = {
 ```
 
 > Esto hace que el navegador muestre en la consola el error de Javascript `ReferenceError: module is not defined` pero continúa funcionando correctamente
+
+Cuando quieras pasar los test escribe en la terminal:
+```bash
+npm run tests
+```
+
