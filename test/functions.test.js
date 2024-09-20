@@ -16,11 +16,11 @@ describe('Funciones sobre la frase "Una frase para probar"', () => {
     test('titleString devuelve Una Frase Para Probar ', () => {
       expect(funciones.titleString(frase)).toBe('Una Frase Para Probar');
     });
-    test('letrasReves devuelve raborp arap esarf anU', () => {
-      expect(funciones.letrasReves(frase)).toBe('raborp arap esarf anU');
+    test('backwardsLetters devuelve raborp arap esarf anU', () => {
+      expect(funciones.backwardsLetters(frase)).toBe('raborp arap esarf anU');
     });
-    test('backwardsLetters devuelve probar para frase Una', () => {
-      expect(funciones.backwardsLetters(frase)).toBe('probar para frase Una');
+    test('backwardsWords devuelve probar para frase Una', () => {
+      expect(funciones.backwardsWords(frase)).toBe('probar para frase Una');
     });
     test('palindrome sobre "Una frase para probar"  devuelve FALSE', () => {
       expect(funciones.palindrome(frase)).toBe(false);
